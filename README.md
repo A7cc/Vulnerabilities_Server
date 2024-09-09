@@ -24,6 +24,9 @@
 
 后端使用`Gin`框架，前端使用`Vue`框架（我前端太菜了，借用了开发大佬项目[student-mangement-system-web](https://github.com/seasonl2014/student-mangement-system-web)前端魔改的
 
+
+如果觉得项目可以，加个⭐！！！
+
 # 贰 Vulnerability
 
 目前有这些漏洞，如果有好的`idea`漏洞，可以提个`issues`给我，我来加：
