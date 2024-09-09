@@ -21,7 +21,7 @@
 
 项目后面的设想是以这个场景为出发点扩展出其他语言的漏洞靶场，目前只写了`Golang`语言的漏洞靶场，后面会持续更新，如果您觉得Vulnerabilities_Server对你有些许帮助，请加个⭐，您的支持将是Vulnerabilities_Server前进路上的最好的见证！
 
-后端使用`Gin`框架，前端使用`Vue`框架（我前端太菜了，借用了开发大佬项目[student-mangement-system-web](https://github.com/seasonl2014/student-mangement-system-web)前端魔改的
+后端使用`Gin`框架，前端使用`Vue`框架（我前端太菜了，借用了开发大佬项目[student-mangement-system-web](https://github.com/seasonl2014/student-mangement-system-web)前端魔改的）
 
 
 # 贰 Vulnerability
