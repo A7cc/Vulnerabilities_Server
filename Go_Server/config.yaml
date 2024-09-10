@@ -1,0 +1,32 @@
+# 项目端口
+server:
+  port: 8081
+
+# 数据库配置
+db:
+  dialects: mysql
+  host: 127.0.0.1
+  port: 3306
+  db: go_server_db
+  username: root
+  password: 123.com@0
+  charset: utf8mb4
+  # 最大空闲数
+  maxIdle: 50
+  # 最大连接数
+  max0pen: 150
+
+# 静态资源
+staticData: ./static/
+
+# 上传地址和ip
+uploadDir: ./static/uploads/
+
+# 备份数据库路径
+backupsdbDir: ./static/backupdb/
+
+# 解压路径
+zipDir: ./static/zipfile/
+
+# 日志配置
+logpath: ./static/log
