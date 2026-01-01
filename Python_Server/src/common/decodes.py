@@ -30,9 +30,9 @@ def CustomDecrypt(encrypted):
     decrypted_text = ''
     for c in reversed_text:
         if 'A' <= c <= 'Z':
-            decrypted_text += chr((ord(c) - ord('A') - shift) % 26 + ord('A'))
+            decrypted_text += chr((ord(c) - ord('A') + shift) % 26 + ord('A'))
         elif 'a' <= c <= 'z':
-            decrypted_text += chr((ord(c) - ord('a') - shift) % 26 + ord('a'))
+            decrypted_text += chr((ord(c) - ord('a') + shift) % 26 + ord('a'))
         else:
             decrypted_text += c
     

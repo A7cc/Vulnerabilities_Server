@@ -5,11 +5,11 @@ server:
 # 数据库配置
 db:
   dialects: mysql
-  host: 127.0.0.1
+  host: db
   port: 3306
-  db: vul_server_go
+  db: vul_server
   username: root
-  password: 123456
+  password: root
   charset: utf8mb4
   # 最大空闲数
   maxIdle: 50

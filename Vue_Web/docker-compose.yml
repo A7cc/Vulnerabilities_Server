@@ -1,0 +1,8 @@
+services:
+  vue_web:
+    build: .
+    container_name: vulnerabilities_server_vue
+    ports:
+      - "5173:5173"
+    stdin_open: true
+    tty: true

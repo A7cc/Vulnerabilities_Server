@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F4F5F7"
+            android:fillViewport="true">
+
+    <LinearLayout android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+        <TextView android:text="@string/crypto_title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#303F9F"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <!-- 输入框 -->
+        <EditText android:id="@+id/et_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入明文"
+                android:padding="10dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_marginBottom="10dp"/>
+
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="4dp">
+
+            <LinearLayout android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:padding="16dp">
+                <!-- 第一行 -->
+                <LinearLayout android:orientation="horizontal"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:layout_marginBottom="8dp">
+                    <!-- Base64 -->
+                    <Button android:id="@+id/btn_base64_encrypt_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/base64_e"/>
+
+                    <Button android:id="@+id/btn_base64_decrypt_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/base64_d"/>
+                </LinearLayout>
+
+                <!-- 第二行 -->
+                <LinearLayout android:orientation="horizontal"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:layout_marginBottom="8dp">
+                    <!-- MD5 -->
+                    <Button
+                            android:id="@+id/btn_md5_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/md5"/>
+                    <!-- SHA256 -->
+                    <Button
+                            android:id="@+id/btn_sha256_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/sha256"/>
+                </LinearLayout>
+
+                <!-- 第三行 -->
+                <LinearLayout android:orientation="horizontal"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:layout_marginBottom="8dp">
+                    <!-- DES -->
+                    <Button
+                            android:id="@+id/btn_des_encrypt_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/des_e"/>
+                    <Button
+                            android:id="@+id/btn_des_decrypt_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/des_d"/>
+                </LinearLayout>
+
+                <!-- 第四行 -->
+                <LinearLayout android:orientation="horizontal"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:layout_marginBottom="8dp">
+                    <!-- 3DES -->
+                    <Button
+                            android:id="@+id/btn_3des_encrypt_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/_3des_e"/>
+                    <Button
+                            android:id="@+id/btn_3des_decrypt_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/_3des_d"/>
+                </LinearLayout>
+
+                <!-- 第五行 -->
+                <LinearLayout android:orientation="horizontal"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:layout_marginBottom="8dp">
+                    <!-- AES -->
+                    <Button
+                            android:id="@+id/btn_aes_encrypt_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/aes_e"/>
+                    <Button
+                            android:id="@+id/btn_aes_decrypt_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/aes_d"/>
+                </LinearLayout>
+
+                <!-- 第六行 -->
+                <LinearLayout android:orientation="horizontal"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:layout_marginBottom="8dp">
+                    <!-- RSA -->
+                    <Button
+                            android:id="@+id/btn_rsa_encrypt_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/rsa_e"/>
+                    <Button
+                            android:id="@+id/btn_rsa_decrypt_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/rsa_d"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="2dp">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:id="@+id/tv_crypto_result"
+                        android:text="结果：null"
+                        android:textSize="14sp"
+                        android:textColor="#666666"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

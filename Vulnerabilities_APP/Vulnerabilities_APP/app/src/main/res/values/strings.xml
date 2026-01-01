@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Vulnerabilities_APP</string>
+    <string name="app_vulnerabilities_lab">APP Vulnerabilities Lab</string>
+    <string name="development_learning">Android开发与逆向学习</string>
+    <string name="http_title">HTTP请求</string>
+    <string name="http_info">学习HTTP请求，Header、参数、签名等</string>
+    <string name="crypto_title">加密算法</string>
+    <string name="crypto_info">MD5、AES、RSA 等加密算法</string>
+    <string name="root_title">ROOT检测</string>
+    <string name="root_info">多种Root检测与绕过思路</string>
+    <string name="base64_d">BASE64_d</string>
+    <string name="base64_e">BASE64_e</string>
+    <string name="md5">MD5</string>
+    <string name="sha256">SHA256</string>
+    <string name="des_e">DES_e</string>
+    <string name="des_d">DES_d</string>
+    <string name="_3des_e">3DES_e</string>
+    <string name="_3des_d">3DES_d</string>
+    <string name="aes_e">AES_e</string>
+    <string name="aes_d">AES_d</string>
+    <string name="rsa_e">RSA_e</string>
+    <string name="rsa_d">RSA_d</string>
+    <string name="http_get">Http_Get</string>
+    <string name="http_post">Http_POST</string>
+    <string name="okhttp3get">Okhttp3_GET</string>
+    <string name="okhttp3_post">Okhttp3_POST</string>
+    <string name="other_title">其他检测手段</string>
+    <string name="other_info">一些手机品牌、运营商、时区等检测</string>
+</resources>

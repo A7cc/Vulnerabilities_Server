@@ -76,11 +76,9 @@ MIDDLEWARE = [
     # 主要作用是防止点击劫持攻击。它允许你防止恶意用户在你的网站上嵌入其他网站的内容。
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     # 添加认证中间件
-    'middleware.authmiddleware.AuthMiddleWare',
-    
-    
+    'middleware.authmiddleware.AuthMiddleWare',    
 ]
-# TODO: 添加跨CORS问题
+
 # ===============================================
 CORS_ORIGIN_ALLOW_ALL = True
 
@@ -127,7 +125,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'vul_server_py',
         'USER': 'root',
-        'PASSWORD': '123456',
+        'PASSWORD': 'root',
         'HOST': 'localhost',
         'PORT': 3306,
     }
@@ -185,11 +183,14 @@ JWT_SECRET_KEY = ""
 # 算法
 JWT_ALGORITHM = "HS256"
 # 文件上传位置
-UPLOAD_FOLDER = os.path.join(STATIC_URL, "uploads/")
+UPLOAD_FOLDER = os.path.join(BASE_DIR, "static", "uploads")
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 # 数据库备份位置
-BACKUP_FOLDER = os.path.join(STATIC_URL, "backupdb/")
+BACKUP_FOLDER = os.path.join(BASE_DIR, "static", "backupdb")
+os.makedirs(BACKUP_FOLDER, exist_ok=True)
 # 日志文件位置
-LOG_FILE = os.path.join(STATIC_URL, "log/")
+LOG_DIR = os.path.join(BASE_DIR, "static", "log")
+os.makedirs(LOG_DIR, exist_ok=True)
 
 # 日志配置
 LOGGING = {
@@ -199,7 +200,7 @@ LOGGING = {
         'file': {
             'level': 'INFO',
             'class': 'logging.FileHandler',
-            'filename': os.path.join(LOG_FILE, 'syslog.log'),
+            'filename': os.path.join(LOG_DIR, 'syslog.log'),
         },
     },
     'loggers': {

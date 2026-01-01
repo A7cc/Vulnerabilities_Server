@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F4F5F7"
+            android:fillViewport="true">
+
+    <LinearLayout android:orientation="vertical"
+              android:padding="20dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal">
+
+        <TextView android:text="@string/other_title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#303F9F"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="4dp">
+
+            <!-- 外层 LinearLayout 用 vertical 排列行 -->
+            <LinearLayout android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                <!-- 第一行 -->
+                <LinearLayout android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                    <Button android:id="@+id/btn_check_phone_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="检测手机品牌"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"/>
+                </LinearLayout>
+
+                <!-- 第二行 -->
+                <LinearLayout android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+                    <Button android:id="@+id/btn_check_operator_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="检测运营商"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"/>
+                </LinearLayout>
+                <!-- 第三行 -->
+                <LinearLayout android:orientation="horizontal"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:gravity="center">
+
+                    <Button android:id="@+id/btn_check_network_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="检测联网方式"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"/>
+
+
+                </LinearLayout>
+
+                <!-- 第四行 -->
+                <LinearLayout android:orientation="horizontal"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:gravity="center">
+
+                    <Button android:id="@+id/btn_check_timezone_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="检测时区"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

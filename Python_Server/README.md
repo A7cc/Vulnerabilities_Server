@@ -1,25 +1,10 @@
-# 零 注意（Tips）
-
-- 1.请勿将本系统用于开发项目，系统中存在许多漏洞，仅允许帮助安全研究人员和业余爱好者了解和掌握有关Golang系统的渗透测试和代码审计知识。
-
-  1.Do not use this system for development projects, there are many vulnerabilities in the system, only allowed to help security researchers and hobbyists understand and master the penetration testing and code audit knowledge about the Golang system.
-
-- 2.不得用于非法和犯罪活动。
-
-  2.It shall not be employed for illegal and criminal activities.
-
-- 3.不要用来提交CVE。
-
-  3.Do not use to submit CVE.
-
-# 壹 Vulnerabilities_Server
+# 壹 Vulnerabilities_Server_Python
 
 这是一个用`Python`写的`Web`靶场，该系统是以食谱菜单管理系统为场景去编写，一种实战化形式的安全漏洞靶场，其中存在多个安全漏洞，需要我们去探索和发现。该项目旨在帮助安全研究人员和爱好者了解和掌握关于`Python`系统的渗透测试和代码审计知识。
 
-后端使用`python3`语言、`Django`框架和`mysql`数据库，前端使用`Vue`框架。
+当前代码为靶场的后端代码，使用`python3`语言、`Django`框架和`mysql`数据库，前端使用`Vue`框架。项目地址：https://github.com/A7cc/Vulnerabilities_Server
 
-项目后面的设想是以这个场景为出发点扩展出其他语言的漏洞靶场，后面会持续更新，如果您觉得`Vulnerabilities_Server`对你有些许帮助，请加个⭐，您的支持将是`Vulnerabilities_Server`前进路上的最好的见证！
-
+项目后面的设想是以这个场景为出发点扩展出其他语言的漏洞靶场，后面会持续更新，如果您觉得对你有些许帮助，请加个⭐，您的支持将是[`Vulnerabilities_Server`](https://github.com/A7cc/Vulnerabilities_Server)对你有些许帮助，请加个⭐，您的支持将是[`Vulnerabilities_Server`](https://github.com/A7cc/Vulnerabilities_Server)前进路上的最好的见证！
 
 # 贰 Vulnerability
 
@@ -64,6 +49,7 @@ JWT：密钥为空
 ```
 
 > 注意：可能会有其他漏洞，在写的时候由于突然的想法加但是没提出来，如果发现的话，帮忙提个`issues `（不是交`CVE`，用这个系统交`CVE`的是`SB`）。。。
+> `Web`的用户名密码：`admin`/`hJ58F_Qr96LW`
 
 # 叁 部署
 
@@ -97,3 +83,16 @@ python .\manage.py runserver 8081
 http://localhost:8081/swagger/index.html
 ```
 
+- `Docker`部署
+
+后端直接在`Python_Server`目录下执行：
+
+```bash
+docker-compose up -d
+```
+
+前端的话，直接在`Vue_Server`目录下执行：
+
+```bash
+docker-compose up -d
+```

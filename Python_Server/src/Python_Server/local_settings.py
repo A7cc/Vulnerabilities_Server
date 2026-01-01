@@ -1,3 +1,5 @@
+import os
+
 # 设置中文
 LANGUAGE_CODE = 'zh-hans'
 
@@ -5,10 +7,10 @@ LANGUAGE_CODE = 'zh-hans'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'vul_server_py',
+        'NAME': 'vul_server',
         'USER': 'root',
-        'PASSWORD': '123456',
-        'HOST': 'localhost',
+        'PASSWORD': 'root',
+        'HOST': os.getenv("DB_HOST", "db"),
         'PORT': 3306,
     }
 }

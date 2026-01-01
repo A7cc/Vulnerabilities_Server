@@ -1,0 +1,31 @@
+services:
+  web:
+    build: .
+    container_name: vulnerabilities_server_go
+    ports:
+      - "8081:8081"
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: always
+
+  db:
+    image: mysql:8.0
+    container_name: vulnerabilities_server_mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: vul_server_go
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./dbdata/vul_server_go.sql:/docker-entrypoint-initdb.d/init.sql
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-uroot", "-proot"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  mysql_data:
