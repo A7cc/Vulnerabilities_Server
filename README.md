@@ -85,7 +85,7 @@ http://localhost:8081/swagger/index.html
 
 - 2025/03：增加了一些`vue`前端靶场的加密和一些信息泄露（可以学习`js`相关调试）
 
-- 2025/12：修复了python靶场bug，新增了`APP`的逆向靶场，添加了docker（感谢@zjxs-zzzcb）
+- 2025/12：修复了python靶场bug，新增了`APP`的逆向靶场，添加了docker（感谢[@zjxs-zzzcb](https://github.com/zjxs-zzzcb)）
 
 # 伍  感谢各位师傅
 
