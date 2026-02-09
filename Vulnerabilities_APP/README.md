@@ -26,4 +26,4 @@ Frida_hook学习：1-10
 
 # 叁 部署
 
-直接拿着用，`APP`和`Server`都在里面，直接运行即可。
+直接拿着用，`APK`在里面`[Releases](https://github.com/A7cc/Vulnerabilities_Server/releases)`里，直接运行即可。
