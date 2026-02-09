@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import com.vulnerabilities.app.crypto.CryptoActivity;
 import com.vulnerabilities.app.databinding.ActivityMainBinding;
+import com.vulnerabilities.app.fridastudy.FridaStudyActivity;
 import com.vulnerabilities.app.http.HttpActivity;
 import com.vulnerabilities.app.other.OtherCheckActivity;
 import com.vulnerabilities.app.rootcheck.RootCheckActivity;
@@ -13,14 +14,12 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 
 public class MainActivity extends AppCompatActivity {
-
-
-
     private ActivityMainBinding mainBinding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        System.loadLibrary("vuln_app");
         // 1. 初始化 ViewBinding
         mainBinding = ActivityMainBinding.inflate(getLayoutInflater());
         // 2. 设置布局
@@ -45,6 +44,11 @@ public class MainActivity extends AppCompatActivity {
         // Other检测
         mainBinding.cardOther.setOnClickListener(v -> {
             startActivity(new Intent(this, OtherCheckActivity.class));
+        });
+
+        // Frida学习
+        mainBinding.cardFridastudy.setOnClickListener(v -> {
+            startActivity(new Intent(this, FridaStudyActivity.class));
         });
     }
     /**

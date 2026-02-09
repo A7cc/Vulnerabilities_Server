@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:background="#F4F5F7">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+        <!-- 顶部标题 -->
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/frida_study"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#303F9F"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="12dp"
+                android:layout_gravity="center_horizontal" />
+
+        <!-- 当前关卡操作区（居中） -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+            <TextView
+                    android:id="@+id/tv_frida_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_1"
+                    android:textSize="25sp"
+                    android:textColor="#888888"
+                    android:layout_marginBottom="30dp" />
+
+            <TextView
+                    android:id="@+id/tv_frida_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/frida_tips"
+                    android:textSize="20sp"
+                    android:textColor="#888888"
+                    android:layout_marginBottom="30dp" />
+
+            <EditText
+                    android:id="@+id/et_input"
+                    android:layout_width="307dp"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:hint="@string/frida_input"
+                    android:layout_marginBottom="20dp" />
+
+            <Button
+                    android:id="@+id/btn_fs"
+                    android:layout_width="110dp"
+                    android:layout_height="59dp"
+                    android:text="@string/get_flag" />
+        </LinearLayout>
+
+        <!-- 关卡选择标题 -->
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/frida_level"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="12dp" />
+
+        <!-- 横向关卡选择（核心） -->
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/level_fs_view"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:overScrollMode="never" />
+    </LinearLayout>
+
+</ScrollView>

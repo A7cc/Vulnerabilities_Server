@@ -22,3 +22,4 @@ Java_com_vulnerabilities_app_jninative_JniNative_nativeCheckRoot(
 
     return JNI_FALSE;
 }
+

@@ -8,7 +8,7 @@
 
 # 贰 Vulnerability
 
-目前有这些漏洞，如果有好的`idea`漏洞，可以提个`issues`给我，我来加：
+目前主要是收集了一些主流的检测点以及`Frida`的基础使用练习（这里借鉴了[Frida-Labs](https://github.com/DERE-ad2001/Frida-Labs)），有以下检测点，如果有好的`idea`检测点，可以提个`issues`给我，我来加：
 
 ```bash
 HTTP请求
@@ -18,6 +18,8 @@ HTTP请求
 ROOT检测绕过
 
 一些其他检测
+
+Frida_hook学习：1-10
 ```
 
 > 注意：可能会有其他漏洞，在写的时候由于突然的想法加但是没提出来，如果发现的话，帮忙提个`issues `（不是交`CVE`，用这个系统交`CVE`的是`SB`）。。。

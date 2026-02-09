@@ -87,6 +87,8 @@ http://localhost:8081/swagger/index.html
 
 - 2025/12：修复了python靶场bug，新增了`APP`的逆向靶场，添加了docker（感谢[@zjxs-zzzcb](https://github.com/zjxs-zzzcb)）
 
+- 2026/02：修复了加解密部分的`bug`，添加了加密模块`HMAC`、`Signature`，添加了`Frida`学习模块
+
 # 伍  感谢各位师傅
 
 ## 5.1 Stargazers

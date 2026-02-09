@@ -176,6 +176,29 @@
                             android:layout_marginEnd="8dp"
                             android:text="@string/rsa_d"/>
                 </LinearLayout>
+
+                <!-- 第七行 -->
+                <LinearLayout android:orientation="horizontal"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:layout_marginBottom="8dp">
+                    <!-- RSA -->
+                    <Button
+                            android:id="@+id/btn_hmac_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/hmac"/>
+                    <Button
+                            android:id="@+id/btn_sign_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/sign"/>
+                </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

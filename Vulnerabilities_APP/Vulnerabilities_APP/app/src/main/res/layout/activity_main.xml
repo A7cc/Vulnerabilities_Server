@@ -168,6 +168,39 @@
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+        <!-- Frida学习-->
+        <androidx.cardview.widget.CardView
+                android:id="@+id/card_fridastudy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="2dp">
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:text="Frida学习"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="#E91E63"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <TextView
+                        android:text="主要是用于学习Frida的一些使用"
+                        android:textSize="13sp"
+                        android:textColor="#999999"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
         <!-- VPN检测 -->
         <!-- frida检测 -->
         <!-- 检测设备型号，例如模拟器等 -->

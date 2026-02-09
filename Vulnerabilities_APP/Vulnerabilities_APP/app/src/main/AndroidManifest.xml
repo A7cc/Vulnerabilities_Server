@@ -27,6 +27,7 @@
         <activity android:name=".crypto.CryptoActivity" />
         <activity android:name=".rootcheck.RootCheckActivity" />
         <activity android:name=".other.OtherCheckActivity" />
+        <activity android:name=".fridastudy.FridaStudyActivity" />
     </application>
 
 </manifest>

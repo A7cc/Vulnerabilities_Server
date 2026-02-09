@@ -20,10 +20,19 @@
     <string name="aes_d">AES_d</string>
     <string name="rsa_e">RSA_e</string>
     <string name="rsa_d">RSA_d</string>
+    <string name="hmac">HMAC</string>
+    <string name="sign">Signature</string>
     <string name="http_get">Http_Get</string>
     <string name="http_post">Http_POST</string>
     <string name="okhttp3get">Okhttp3_GET</string>
     <string name="okhttp3_post">Okhttp3_POST</string>
     <string name="other_title">其他检测手段</string>
     <string name="other_info">一些手机品牌、运营商、时区等检测</string>
+    <string name="frida_study">Frida_Study</string>
+    <string name="level_1">第一关</string>
+    <string name="frida_tips">这关要hook哪个函数呢？</string>
+    <string name="frida_input">请输入</string>
+    <string name="frida_level">选择关卡</string>
+    <string name="get_flag">获取flag</string>
+
 </resources>
