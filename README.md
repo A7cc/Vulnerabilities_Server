@@ -76,6 +76,14 @@
 http://localhost:8081/swagger/index.html
 ```
 
+- `APP`靶场
+
+![5698d15f75630aea1965110360a406b5](./README/5698d15f75630aea1965110360a406b5.jpg)
+
+![d4d11ad3f752b5c662c0b1ad6f2e8259](./README/d4d11ad3f752b5c662c0b1ad6f2e8259.jpg)
+
+![2c96fcae85fc36d62316e15b08aa3a41](./README/2c96fcae85fc36d62316e15b08aa3a41.jpg)
+
 # 肆 更新
 
 - 2024/09：最开始的`Golang`靶场
